@@ -3,7 +3,10 @@
 <header>
   	<style type="text/css">
   		header {
-  			background-color: #000000;}
+  			background-color: #000000;
+  			color: #990000;
+  			height: 30px;
+  			}
   			
 		nav {
 			width: 810px;
@@ -14,12 +17,19 @@
   			vertical-align: middle;}
 
 		nav ul {
-  			font-family: Times;
   			font-size: 14px;
   			margin: 0 auto;
   			padding: 0;
   			list-style: none;
   			text-align: center;}
+  		
+  		header div {
+  			float: left;
+  			margin-left: 10px;
+			font-weight: bold;
+			font-family: fantasy;
+			padding-top: 5px;
+  		}
   		
  		nav ul li {
   			display: block;
@@ -70,40 +80,41 @@
     		text-align:center;} /* Nested List Items */
     		
     	nav ul li div {
-    		padding-top: 5px;}
+    		float: right;
+    		padding-top: 6px;}
 	</style>
-
+	<div id="logo">|  Aven's Den  |</div>
 	<nav>
-    	<ul>
-      		<li><a href="/">Home</a></li>
+    	<ul>	
+     		<li><a href="/">Home</a></li>
       		
-      		<li><a href="/games">Games</a>
+      		<li><a href="/construction">Games</a>
         		<ul>
-            		<li><a href="/games/active">Active</a></li>
-            		<li><a href="/games/history">History</a></li>
-            		<li><a href="/games/icebox">Icebox</a></li>
-            		<li><a href="/games/library">Library</a></li>
+            		<li><a href="/construction">Active</a></li>
+            		<li><a href="/construction">History</a></li>
+            		<li><a href="/construction">Icebox</a></li>
+            		<li><a href="/construction">Library</a></li>
         		</ul>
       		</li>
       		
-      		<li><a href="/stream">Stream</a></li>
+      		<li><a href="/construction">Stream</a></li>
       		
-      		<li><a href="/projects">Projects</a>
+      		<li><a href="/construction">Projects</a>
         		<ul>
-            		<li><a href="/current">Current Projects</a></li>
+            		<li><a href="/construction">Current Projects</a></li>
         		</ul>
       		</li>
       		
-      		<li><a href="/tutorials">Tutorials</a></li>
-      		<li><a href="/about">About Me</a></li>
-      		<li><a href="/promotions">Promotions</a></li>
-      		<li><a href="/feedback">Feedback</a></li>
+      		<li><a href="/construction">Tutorials</a></li>
+      		<li><a href="/construction">About Me</a></li>
+      		<li><a href="/construction">Promotions</a></li>
+      		<li><a href="/construction">Feedback</a></li>
       		<li><div><%= Time.now.strftime("%H:%M %Z") %></div></li>
       
     	</ul>
 	</nav>
 </header>
-	
+	<h2></h2>
 	<head>
 		<title>
 			Aven's Den | <%= yield(:title) %>
