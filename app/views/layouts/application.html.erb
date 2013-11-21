@@ -107,8 +107,8 @@
       		<li><a href="/construction">Tutorials</a></li>
       		<li><a href="/construction">About Me</a></li>
       		<li><a href="/construction">Promotions</a></li>
-      		<li><a href="/construction">Feedback</a></li>
-      		<li><div><%= Time.now.strftime("%H:%M %Z") %></div></li>
+      		<li><a href="/feedback">Feedback</a></li>
+      		<li><div><%= Time.now.localtime("+04:00").strftime("%H:%M %Z") %></div></li>
       
     	</ul>
 	</nav>

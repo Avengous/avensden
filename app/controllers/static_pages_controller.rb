@@ -10,4 +10,9 @@ class StaticPagesController < ApplicationController
   
   def construction
   end
+  
+  def feedback
+    
+  end
+ 
 end
