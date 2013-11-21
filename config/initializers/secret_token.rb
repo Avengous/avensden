@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-SampleApp::Application.config.secret_key_base = '68d8114c2a7be9d64a0517e6f45a7c0cb7cfd4a476e354144a0f05761a63295b18aec3b2025601804e8cc7ebc4a38d65d24a7ab5d3e560d06360f706513354d7'
+AvensDen::Application.config.secret_key_base = '68d8114c2a7be9d64a0517e6f45a7c0cb7cfd4a476e354144a0f05761a63295b18aec3b2025601804e8cc7ebc4a38d65d24a7ab5d3e560d06360f706513354d7'

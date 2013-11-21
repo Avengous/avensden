@@ -1,4 +1,4 @@
-SampleApp::Application.routes.draw do
+AvensDen::Application.routes.draw do
   get "games/Index"
   get "home" => 'static_pages#home'
   get "static_pages/help"
