@@ -1,7 +1,11 @@
 class GamesController < ApplicationController
-  def Index
+  def index
   end
   
-  def Nicknames
+  def nicknames
+  end
+  
+  def league
+    
   end
 end

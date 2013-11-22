@@ -1,5 +1,6 @@
 AvensDen::Application.routes.draw do
-  get "games/Index"
+  get "games/index"
+  get "games/league-of-legends" => 'games#league'
   get "home" => 'static_pages#home'
   get "feedback" => 'static_pages#feedback'
   get "construction" => 'static_pages#construction'
