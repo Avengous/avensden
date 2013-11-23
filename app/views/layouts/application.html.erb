@@ -131,12 +131,51 @@
       		<li><a href="/construction">About Me</a></li>
       		<li><a href="/construction">Promotions</a></li>
       		<li><a href="/feedback">Feedback</a></li>
-      		<li><div><%= time %></div></li>
+      		<li><div>
+
+<head>
+<script>
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+var zone = "";
+
+if (h<12){
+zone = "AM"
+} else {
+h=h-12;
+zone = "PM"
+}
+
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+" "+zone;
+t=setTimeout(function(){startTime()},500);
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+<div id="txt"></div>
+</body>
+				
+      		</div></li>
       
     	</ul>
 	</nav>
 </header>
-
 	<head>
 		<title>
 			Aven's Den | <%= yield(:title) %>
@@ -155,5 +194,9 @@
   	  	</style>
     <%= yield %>
   </body>
+  
+  <footer>
+  		
+  </footer>
   
 </html>
