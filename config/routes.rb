@@ -3,6 +3,7 @@ AvensDen::Application.routes.draw do
   get "games/league-of-legends" => 'games#league'
   get "games/nicknames" => 'games#nicknames'
   
+  get "construction" => 'static_pages#construction'
   get "home" => 'static_pages#home'
   get "feedback" => 'static_pages#feedback'
 
