@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html>	
 <header>
   	<style type="text/css">
   		header {
@@ -130,49 +130,35 @@
       		<li><a href="/construction">Tutorials</a></li>
       		<li><a href="/construction">About Me</a></li>
       		<li><a href="/construction">Promotions</a></li>
-      		<li><a href="/feedback">Feedback</a></li>
-      		<li><div>
-
-<head>
-<script>
-function startTime()
-{
-var today=new Date();
-var h=today.getHours();
-var m=today.getMinutes();
-var s=today.getSeconds();
-var zone = "";
-
-if (h<12){
-zone = "AM"
-} else {
-h=h-12;
-zone = "PM"
-}
-
-m=checkTime(m);
-s=checkTime(s);
-document.getElementById('txt').innerHTML=h+":"+m+" "+zone;
-t=setTimeout(function(){startTime()},500);
-}
-
-function checkTime(i)
-{
-if (i<10)
-  {
-  i="0" + i;
-  }
-return i;
-}
-</script>
-</head>
-
-<body onload="startTime()">
-<div id="txt"></div>
-</body>
-				
-      		</div></li>
-      
+      		<li><a href="/feedback">Feedback</a></li> 		
+      		<li><body onload="startClock()">
+      				<div id="clock">
+						<script>
+							function startClock(){
+								var date = new Date();
+								var hours = date.getHours();
+								var minutes = date.getMinutes();
+								var seconds = date.getSeconds();
+								var ampm = '';
+								if(hours < 12){
+									ampm = 'AM';
+								} else {
+									ampm = 'PM';
+								}					
+								minutes = checkTime(minutes);
+								document.getElementById('clock').innerHTML = hours + ':' + minutes + ampm;
+								setTimeout(function(){startClock()},500);
+							}
+							
+							function checkTime(i){
+								if (i<10){
+								  i="0" + i;
+								}
+								return i;
+							}
+						</script>
+					</div>
+				</body></li>     
     	</ul>
 	</nav>
 </header>
