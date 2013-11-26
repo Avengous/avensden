@@ -6,6 +6,7 @@ AvensDen::Application.routes.draw do
   get "construction" => 'static_pages#construction'
   get "home" => 'static_pages#home'
   get "feedback" => 'static_pages#feedback'
+  get "stream" => 'static_pages#stream'
 
   get "promotions/geek-city-sirens" => 'promotions#geek_city_sirens'
   # The priority is based upon order of creation: first created -> highest priority.
