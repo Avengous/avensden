@@ -140,7 +140,7 @@ nav ul li:hover > ul {
   		
  		nav li:hover li {
   			float: none;
-  			font-size: 12px;}
+  			font-size: 11px;}
   		
 		nav li:hover a { 
   			background: #2E2F30; 
@@ -162,10 +162,15 @@ nav ul li:hover > ul {
       		
       		<li ><a href="/construction">Games</a>
         		<ul>
-            		<li id="subnav"><a href="/games/league-of-legends">LoLegends</a></li>
-            		<li id="subnav"><a href="/construction">History</a></li>
-            		<li id="subnav"><a href="/construction">Icebox</a></li>
-            		<li id="subnav"><a href="/construction">Library</a></li>
+            		<li id="subnav"><a href="/construction">League of Legends</a>
+            			<ul>
+            				<li><a href="/games/league-of-legends/team">Silent Edge</a></li>
+            				<li><a href="/construction">Tools</a></li>
+            			</ul>
+            		</li>
+            		<li id="subnav"><a href="/construction">Starcraft 2</a></li>
+            		<li id="subnav"><a href="/construction">Minecraft</a></li>
+            		<li id="subnav"><a href="/construction">Playthroughs</a></li>
         		</ul>
       		</li>
       		
@@ -173,14 +178,28 @@ nav ul li:hover > ul {
       		
       		<li><a href="/construction">Projects</a>
         		<ul>
-            		<li><a href="/construction">Current Projects</a></li>
+            		<li><a href="/construction">Project Icebox</a></li>        			
+            		<li><a href="/construction">Archived Projects</a></li>
         		</ul>
       		</li>
       		
-      		<li><a href="/construction">Tutorials</a></li>
-      		<li><a href="/construction">About Me</a></li>
+      		<li><a href="/construction">Tutorials</a>
+        		<ul>
+            		<li><a href="/construction">Game Guides</a></li>        			
+            		<li><a href="/construction">Code School</a></li>
+            		<li><a href="/construction">Underground</a></li>
+        		</ul>
+      		</li>
+
+      		<li><a href="/construction">About Me</a>
+        		<ul>
+            		<li><a href="/construction">Facebook</a></li>        			
+            		<li><a href="/construction">LinkedIn</a></li>
+            		<li><a href="/construction">GitHub</a></li>            		
+        		</ul>
+      		</li>
       		
-      		<li><a href="/construction">Promotions</a>
+      		<li><a href="/construction">Affiliates</a>
       			<ul>
       				<li id="subnav"><a href="/construction">Geek City Sirens</a>
       					<ul>
@@ -206,6 +225,7 @@ nav ul li:hover > ul {
 								if(hours < 12){
 									ampm = 'AM';
 								} else {
+									hours = hours - 12;
 									ampm = 'PM';
 								}					
 								minutes = checkTime(minutes);
